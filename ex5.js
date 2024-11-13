@@ -1,27 +1,16 @@
 //ex5 Passa’t un String, retorni el número de vocals que té
 
 function contarVocals(frase){
-    var vocals = 0
+    var vocalsN = 0
+    var vocals = "aeiouAEIOU"
 
-    for (i = 0; i < frase.length; i++){
-        if (frase.charAt(i) === "a"){
-            vocals++
-        }
-        else if (frase.charAt(i) === "e"){
-            vocals++
-        }
-        else if (frase.charAt(i) === "i"){
-            vocals++
-        }
-        else if (frase.charAt(i) === "o"){
-            vocals++
-        }
-        else if (frase.charAt(i) === "u"){
-            vocals++
+    for (var i = 0; i < frase.length; i++){
+        if (vocals.includes(frase.charAt(i))){
+            vocalsN++
         }
     }
 
-    console.log("Vocals trobades: "+vocals)
+    console.log("Vocals trobades: "+vocalsN)
 }
 
-contarVocals("hola")
+contarVocals("aeaeaeaeae")

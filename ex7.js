@@ -10,6 +10,12 @@ function sumardosnumerosmestres(numero1,numero2) {
     return numero1 + numero2+3;
 }
 
-dataavui();
+function trucar(){
 
-sumardosnumerosmestres(1,2)
+    dataavui();
+
+    sumardosnumerosmestres(1,2)
+
+}
+
+trucar()
